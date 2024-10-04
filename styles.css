@@ -1,0 +1,395 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+--cor1:#f92edc;
+--cor2:#811fee;
+--cor3:#ff009c;
+--cor4:#afe35d;
+--cor5:#f237ef;
+--cor6:#fc5252;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+   
+     /* Remove apenas a barra de rolagem vertical */
+    
+    
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #faf9f9;
+    color: #fff;
+    padding: 13px;
+    border-left: 2px solid #ffffff75;
+    border-left: 2px solid #ffffff75;
+    box-shadow: 5px 5px 12px #00000035;
+    background: #ffffff25;
+    backdrop-filter: blur(4px);
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home-1, #about-1, #projects-1, #contatos-1 {
+    padding: 4px 15px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', sans-serif;
+    color: #070707;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#home-1:hover, #about-1:hover, #projects-1:hover, #contatos-1:hover {
+    background: rgba(255, 255, 255, 0.2); /* Leve aumento na opacidade do fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada ao passar o mouse */
+}
+
+#home-1:active, #about-1:active, #projects-1:active, #contatos-1:active {
+    background: rgba(255, 255, 255, 0.3); /* Fundo mais opaco ao clicar */
+    color: #e2337a; /* Cor do texto ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
+    transform: scale(0.98); /* Leve redução de tamanho ao clicar */
+}
+
+
+
+home {
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.section-principal {
+    height: 800px;
+    width: 100%; /* Define a largura do contêiner */
+    background: linear-gradient(to bottom right, #d8d8d8, hwb(285 73% 26%)); /* Gradiente corrigido */
+    margin-top: 0px;
+    margin-bottom: 0px;
+   background-image: url(fundo\ 1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   justify-items: center;
+   align-items: center;
+   display: flex;
+
+}
+
+.Descrição{
+    margin:auto;
+    
+
+}
+
+#description-1 {
+    font-size: 50px;
+    background: linear-gradient(90deg, #1b1b1b, #f247f8fd); /* Gradiente horizontal */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Adiciona suporte para navegadores que não são WebKit */
+    text-fill-color: transparent;
+    line-height: 60px;
+    
+}
+
+
+
+ 
+.container {
+    height: 600px;
+    width: 250px;
+    border-radius: 15px;
+    background:rgba(255, 255, 255, 0.1);
+     /* Fundo semitransparente */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+    transition: 0.5s ease;
+    margin-top: 25px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+   
+    
+    
+}
+
+#foto {
+    width: 60%;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 15%;
+    border: 10px  #f5b6f5; /* Definição da borda */
+    box-shadow: 5px 5px 15px rgba(245, 19, 177, 0.3); /* Sombra ao redor da imagem */
+    position: relative; /* Necessário para o pseudo-elemento funcionar corretamente */
+    z-index: 1; /* Mantém a imagem acima do pseudo-elemento */
+}
+
+
+  #name{
+    font-family: "Rajdhani", sans-serif;
+    font-size: 25px;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #f5b6f5, #f247f8); /* Gradiente horizontal */
+    -webkit-background-clip: text; /* Para suportar navegadores baseados no WebKit */
+    -webkit-text-fill-color: transparent; /* Para deixar o texto transparente */
+  }
+
+  .texto{
+    align-itens:left;
+    margin-left:5%;
+  }
+  #function{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0a0a0a;
+    margin-top: 20px;   
+    font-weight: 500;
+    line-height: 20px;
+
+    font-style:italic;
+    
+  }
+
+  
+
+  #info{
+    font-size: 12px;
+    padding-top: 20px;
+    font-style: italic;
+    font-weight: 500;
+    text-align:left;
+    
+
+
+
+  }
+  .icons{ 
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 0px;
+    
+
+}
+  
+#wspp {
+    width: 50px;
+    height: 50px;
+}
+ 
+#linkdin{
+    width: 50px;
+    height: 50px;
+}
+
+#inst{
+    width: 50px;
+    height: 50px;
+}
+  .button {
+    width: 200px;
+    height: 50px;
+    color: #070707;
+    border-radius: 15px;
+    background: rgba(238, 4, 238, 0.658); /* Fundo semitransparente */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+    transition: 0.5s ease;
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: 0.3s ease; /* Transição suave */
+    margin-top: auto;/* Margem superior */
+    margin-bottom: 30px;
+    padding: 0; /* Remove o padding padrão se houver */
+    outline: none; /* Remove o contorno ao clicar */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.button:active {
+    background: rgba(255, 255, 255, 0.2); /* Fundo mais opaco ao clicar */
+    color: #e2337a; /* Cor do texto ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
+}
+.button:hover {
+    background-image: -moz-linear-gradient(to right, var(--cor1), var(--cor2)); /* Cor do fundo ao passar o mouse */
+}
+    
+    .button-link {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 16px; /* Tamanho da fonte do link */
+    display: block; /* Faz o link ocupar todo o botão */
+}
+
+
+
+
+.section-2{
+    height: 800px;
+    width: 100%px;
+       margin-top: 0px;
+       background-image: url(1\(1\).png);
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-image: transparent;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       
+
+
+     }
+    .sobre-mim{
+       
+       height: 600px;
+       width: 1200px;
+       color: #6b2cf5;
+       padding: 20px 20px 20px ;
+       border-radius: 15px;
+       background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+       backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+       -webkit-backdrop-filter: blur(10px); /* Compatibilidade com WebKit */
+       border: 1px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+       transition: 0.5s ease;
+       margin-top: 30px;
+       margin-left: auto;
+       margin-right: 20px;
+       display: flex;
+       flex-direction: column;
+      
+   
+    }
+   
+    #sobre-mim{
+        font-size: 40px;
+        text-transform: capitalize;
+        color: #d1cfcf;
+    }
+    #descrição{
+        color: #070707;
+        font-size: 20px;
+        
+    }
+    
+        
+
+        
+        
+
+    .projects{
+        height: 600px;
+        width: 1200px;
+        color: #6b2cf5;
+        padding: 50px 20px 20px ;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+        backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+        -webkit-backdrop-filter: blur(10px); /* Compatibilidade com WebKit */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+        transition: 0.5s ease;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: 20px;
+        display: flex;
+       
+       
+    
+     }
+    
+     #projects{
+         font-size: 50px;
+         text-transform: uppercase;
+         background: linear-gradient(90deg, #f5b6f557, #f247f83f); /* Gradiente horizontal */
+     -webkit-background-clip: text; /* Para suportar navegadores baseados no WebKit */
+     -webkit-text-fill-color: transparent;
+ 
+     }
+
+     .section-4{
+        height: 600px;
+        width: 1200px;
+        color: #080808;
+        padding: 50px 20px 20px ;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+        backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+        -webkit-backdrop-filter: blur(10px); /* Compatibilidade com WebKit */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+        transition: 0.5s ease;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: 20px;
+        display: flex;
+       
+    
+     }
+    
+     #softskills{
+         font-size: 50px;
+         text-transform: uppercase;
+         background: linear-gradient(90deg, #f5b6f557, #f247f83f); /* Gradiente horizontal */
+     -webkit-background-clip: text; /* Para suportar navegadores baseados no WebKit */
+     -webkit-text-fill-color: transparent;
+ 
+     }
+
+     
+     
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0
+}
+
+
+  
